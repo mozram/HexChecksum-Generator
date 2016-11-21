@@ -8,6 +8,18 @@
     mc:Ignorable="d">
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-
+        <Grid.RowDefinitions>
+            <RowDefinition Height="32"/>
+            <RowDefinition Height="147*"/>
+            <RowDefinition Height="32"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="121*"/>
+            <ColumnDefinition Width="184*"/>
+            <ColumnDefinition Width="334*"/>
+        </Grid.ColumnDefinitions>
+        <TextBlock Text="Enter address: " Grid.ColumnSpan="3" Margin="0,0,334,0"/>
+        <Button Grid.Row="2" Content="Process"/>
+        <TextBox Name="txtAddrStart" Grid.Column="1"/>
     </Grid>
 </Page>
